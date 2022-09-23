@@ -1,0 +1,230 @@
+.wrap{
+    position: relative;
+}
+.inner{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flex_co{
+    display: flex;
+    flex-direction: column;
+}
+#header{}
+#section{}
+#footer{}
+
+/* content: '';
+    display: block; 
+    width:8px; 
+    height:8px;
+    border-bottom:2px solid #a7a7a7;
+    border-right: 2px solid #a7a7a7; 
+    transform: rotate(315deg);
+    position: absolute;
+    right: 0;
+    top: 50%; */
+    /* >모양 css */
+
+/*********************home****************************/
+
+#home{
+    padding: 50px 50px;
+}
+.top_txt{
+    justify-content: space-between;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+.home_title{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 8.334rem;
+    line-height: 1em;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 75px;
+}
+.link_wrap{
+    /* border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; */
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+    margin: 0 -50px;
+    position: relative;
+}
+.link_wrap .link_wrap_bg:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #333;
+    transition: 0.5s;
+    z-index: -1;
+}
+.link_wrap .link_wrap_bg:nth-child(2){
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #333;
+    transition: 0.5s;
+    z-index: -1;
+}
+.link_wrap.black .link_wrap_bg{
+    height: 50%;
+}
+.link_wrap .link_wrap_inner a{
+    transition: 0.5s;
+}
+.link_wrap .link_wrap_inner a.white_txt{
+    color: #fff !important;
+}
+.link_wrap .link_wrap_inner a.white_txt >p > span{
+    color: #fff !important;
+}
+.link_wrap .link_wrap_inner a.black_txt{
+    color: #333;
+}
+.link_wrap .link_wrap_inner a.black_txt >p > span{
+    color: #333;
+}
+
+.link_wrap_inner{
+    margin: 0 auto;
+    max-width: 1400px;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.link_wrap_inner a >p > span{
+    font-size: 0.5rem;
+    color: #666;
+}
+
+.home_cont_wrap{
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+}
+.skill_wrap, .profile, .txt_ani{
+    width: calc((100% - 100px)/3);
+}
+.skill_wrap{
+    width: calc((100% - 100px)/3);
+    flex-wrap: wrap;
+}
+.skill_btn{
+    display: block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    line-height: 58px;
+    height: 58px;
+    border-radius: 30px;
+    box-shadow: 0px 2px 5px 0 rgba(0,0,0,0.1);
+    margin-right: 20px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    cursor: default;
+}
+.skill_btn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.profile{
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.profile .img_box{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+.profile_img:hover{
+    transform: scale(1.5);
+}
+.profile_img{
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    background-image: url(../images/KakaoTalk_20220916_134620418_01.jpg);
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position: -20px -100px;
+    transition: 0.5s;
+}
+.profile a{
+    display: block;
+    position: relative;
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+.profile a:hover .arrow_right{
+    width: 130%;
+    transition: 0.5s;
+}
+.profile a:hover .arrow_right > span::after{
+    opacity: 1;
+    transition: 0.4s 0.3s;
+}
+.profile a .arrow_right{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 0%;
+    height: 30px;
+    overflow: hidden;
+}
+.profile a .arrow_right > span{
+    display: block;
+    width: 90%;
+    background-color: #333;
+    height: 4px;
+    position: relative;
+    top: 25px;
+    border-radius: 15px;
+}
+.profile a .arrow_right > span::after{
+    content: '';
+    position: absolute;
+    right: -6px;
+    bottom: 8px;
+    width: 25px;
+    height: 4px;
+    border-radius: 15px;
+    transform: rotate(50deg);
+    background-color: #333;
+    opacity: 0;
+}
+.txt_ani{
+    justify-content: center;
+    align-items: center;
+}
+.txt_ani textPath{
+    font-size: 25px;
+    letter-spacing: -0.055em;
+}
+.txt_ani svg{
+    width: 300px;
+    height: 300px;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate{
+    0%{transform:rotate(360deg);}
+    100%{transform:rotate(0deg);}
+}
+
+
+
+/*********************section****************************/
+
+
+/*********************footer****************************/
