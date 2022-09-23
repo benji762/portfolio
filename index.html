@@ -15,17 +15,25 @@
 <link href="css/common.css" rel="stylesheet" type="text/css">
 <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'> -->
-<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css"> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
 
 
 
 </head>
 
-<body >
+<body>
 <div id="fullpage" class="wrap">
+  <div id="intro">
+    <div class="intro_bg_top"></div>
+    <div class="intro_bg_bottom"></div>
+    <div class="intro_txt txt_fir flex">
+      <div class="word"></div>
+    </div><!--intro_txt txt_fir-->
+  </div><!--#intro-->
   <div class="section" id="home">
-    <p class="top_txt flex"><span>Wepdesign</span><span>Portfolio</span></p>
+    <p class="top_txt flex"><span>Portfolio</span></p>
     <h2 class="home_title">KIMJIUN</h2>
     <div class="link_wrap">
       <div class="link_wrap_bg"></div>
@@ -59,7 +67,7 @@
           <p class="arrow_right"><span></span></p>
         </a>
         
-      </div>
+      </div><!--profile-->
       <div class="txt_ani flex">
         <svg x="0"y="0" class="txt_ani_cir">
           <defs>
@@ -71,11 +79,123 @@
             </textPath>
           </text>
         </svg>
-      </div>
+      </div><!--txt_ani-->
     </div><!--home_cont_wrap-->
   </div><!--#home-->
-  <div class="section">asdasdasdasdasdsada2</div>
-  <div class="section">asdasdasdasdasd3</div>
+  <div class="section s1" id="wepsite">
+    <div class="inner">
+      <div class="header">
+        <h2 class="tit s1_tit">WEPSITE</h2>
+      </div><!--wepsite_header -->
+      <section class="lazy slider" >
+        <div> <!--1 시작-->
+          <div class="s1_slide_cont_wrap flex">
+            <div class="s1_slide_txt_wrap">
+              <span>01</span>
+              <h2 class="s1_slide_txt_tit">남양유업<br>웹페이지 리뉴얼</h2>
+              <p class="s1_slide_txt flex">
+                <strong>작업기간_</strong><span>2주</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>기여도_</strong><span>100% 개인작업<br>시안제작, HTML·CSS·jQuery 하드코딩, 컨텐츠 제작</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>제작툴_</strong><span>ADOBE PS · AI, FIGMA , HTML·CSS·jQuery</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>컨셉_</strong><span>#신뢰감 #청결한 #깔끔한 #반응형</span></p>
+              <div class="s1_slide_txt_btn_wrap flex">
+                <a href="#" class="btn">가이드 보러가기</a>
+                <a href="#" class="btn">사이트 바로가기</a>
+                </div><!--s1_slide_txt_btn_wrap-->
+            </div><!--s1_slide_txt_wrap-->
+            <p class="s1_slide_img_box">
+              <img src="images/page1.jpg" alt="남양유업 웹사이트 리뉴얼">
+            </p><!--s1_slide_img_box-->
+          </div><!--s1_slide_cont_wrap-->
+        </div> <!--1 끝-->
+        <div> <!--1 시작-->
+          <div class="s1_slide_cont_wrap flex">
+            <div class="s1_slide_txt_wrap">
+              <h2 class="s1_slide_txt_tit">남양유업<br>웹페이지 리뉴얼</h2>
+              <p class="s1_slide_txt flex">
+                <strong>작업기간_</strong><span>2주</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>기여도_</strong><span>100% 개인작업<br>시안제작, HTML·CSS·jQuery 하드코딩, 컨텐츠 제작</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>제작툴_</strong><span>ADOBE PS · AI, FIGMA , HTML·CSS·jQuery</span></p>
+              <p class="s1_slide_txt flex">
+                <strong>컨셉_</strong><span>#신뢰감 #청결한 #깔끔한 #반응형</span></p>
+
+            </div>
+            <p class="s1_slide_img_box">
+              <img src="images/page1.jpg" alt="남양유업 웹사이트 리뉴얼">
+            </p><!--s1_slide_img_box-->
+          </div><!--s1_slide_cont_wrap-->
+        </div> <!--1 끝-->
+      </section><!-- lazy slider -->
+    </div><!--inner-->
+  </div><!--#wepsite-->
+  <div class="section s2" id="graphic">
+    <div class="inner">
+      <div class="header flex">
+        <h2 class="tit s2_tit">GRAPHIC</h2>
+          <ul class="tabs flex">
+            <li><a href="#all" class="on">All</a></li>
+            <li><a href="#banner" >Banner</a></li>
+            <li><a href="#detailed"  >Detailed page</a><  li>
+          </ul>
+      </div><!--header-->
+            <div class="panels">
+              <div class="panel" id="all">
+                <section class="lazy slider" id="s2_slide">
+                  <div> <!--1 시작-->
+                    <div class="box_wrap all">
+                      <div class="box1">상세페이지</div>
+                      <div class="box2">2번박스</div>
+                      <div class="box3">3번박스</div>
+                      <div class="box4">4번박스</div>
+                      <div class="box5">5번박스</div>
+                    </div><!--box_wrap-->
+                  </div> <!--1 끝-->
+                  <div> <!--2 시작-->
+                    <div class="box_wrap banner">
+                      <div class="box1">상세페이지</div>
+                      <div class="box2">2번2번</div>
+                      <div class="box3">3번박스</div>
+                      <div class="box4">4번박스</div>
+                      <div class="box5">5번박스</div>
+                    </div><!--box_wrap-->
+                  </div> <!--2 끝-->
+                </section><!-- lazy slider -->
+              </div><!--panel #all-->
+              <div class="panel" id="banner">
+                <section class="lazy slider" id="s2_slide">
+                  <div> <!--1 시작-->
+                    <div class="box_wrap detailed">
+                      <div class="box1">패널2</div>
+                      <div class="box2">2번박스</div>
+                      <div class="box3">3번박스</div>
+                      <div class="box4">4번박스</div>
+                      <div class="box5">5번박스</div>
+                    </div><!--box_wrap-->
+                  </div> <!--1 끝-->
+                </section><!-- lazy slider -->
+              </div><!--panel #banner-->
+              <div class="panel" id="detailed">
+                <section class="lazy slider" id="s2_slide">
+                  <div> <!--1 시작-->
+                    <div class="box_wrap">
+                      <div class="box1">패널2</div>
+                      <div class="box2">2번박스</div>
+                      <div class="box3">3번박스</div>
+                      <div class="box4">4번박스</div>
+                      <div class="box5">5번박스</div>
+                    </div><!--box_wrap-->
+                  </div> <!--1 끝-->
+                </section><!-- lazy slider -->
+              </div><!--panel #detailed-->
+            </div><!--panels-->
+          
+      </div><!--inner -->
+  </div><!--#graphic-->
   <div class="section">asdasdasd4</div>
   <footer id="footer"></footer>
 </div>
@@ -84,7 +204,11 @@
 <script src="js/jquery-migrate-3.0.0.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
 <script src="js/fullpage.js"></script>
-<script src="js/hover.js"></script>
+<script src="js/hover_click.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/slick_active.js"></script>
+<script src="js/text_type.js"></script>
+<script src="js/tabs.js" ></script>
 </body>
 
 </html>
