@@ -4,7 +4,7 @@ $(document).ready(function() {
 		autoScrolling:true,
 		scrollHorizontally: true,
 		navigation: true,
-		normalScrollElements:'.pop'
+		normalScrollElements:'.pop,#intro',
 	});
 
 	//methods
