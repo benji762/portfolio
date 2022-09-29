@@ -71,7 +71,7 @@
     margin-top: 0 !important;
     position: absolute;
     z-index: 0;
-    animation: nav_hide 7.5s forwards;
+    animation: nav_hide 4.2s forwards;
 }
 @keyframes nav_hide{
     0%{ z-index: -1;
@@ -151,9 +151,9 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    /* display: none; */
+    display: none;
     z-index: 9999999;
-    animation: intro_none 1s 5.5s forwards;
+    animation: intro_none 1s 3.8s forwards;
 }
 @keyframes intro_none{
     0%{z-index: 99;}
@@ -167,7 +167,7 @@
     height: 50%;
     background-color: #222;
     z-index: 1;
-    animation: intro_top 0.7s forwards 6s;
+    animation: intro_top 0.7s forwards 3.8s;
 }
 .intro_bg_bottom{
     position: absolute;
@@ -177,7 +177,7 @@
     height: 50%;
     background-color: #222;
     z-index: 1;
-    animation: intro_bottom 0.7s forwards 6s;
+    animation: intro_bottom 0.7s forwards 3.8s;
 }
 @keyframes intro_top{
     0%{top: 50%;}
@@ -202,11 +202,11 @@
     font-size: 5rem;
     letter-spacing: 0.1em;
     line-height: 1.15em;
-    animation: intro_txt 5.4s forwards;
+    animation: intro_txt 3.6s forwards;
     position: relative;
 }
 @keyframes intro_txt{
-    97%{display: block;
+    90%{display: block;
         opacity: 1;
     }
     100%{display: none;
@@ -527,6 +527,9 @@
 
 
 /* s2 */
+.s2{
+    position: relative;
+}
 .s2 #s2_slide{
     height: 512px;
 }
@@ -552,17 +555,96 @@
 .s2 .box_wrap{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 250px 250px;
+    column-gap: 20px;
+    row-gap: 20px;
     grid-template-areas:
         'area1 area2 area3 area5 area5'
         'area1 area2 area3 area4 area4';
 }
-.s2 .box_wrap .box1{grid-area: area1; background: #999;}
+.s2 .box_wrap .box1{grid-area: area1;
+    background: url(../images/detailed_page1.jpg) no-repeat;
+    background-size: cover;
+    }
 .s2 .box_wrap .box2{grid-area: area2; background: #999;}
 .s2 .box_wrap .box3{grid-area: area3; background: #999;}
 .s2 .box_wrap .box4{grid-area: area4; background: #999;}
 .s2 .box_wrap .box5{grid-area: area5; background: #999;}
+.s2 .box_wrap a{
+    display: block;
+    position: relative;
+}
+.s2 .modal_hover_txt{
+    transition: 0.3s;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.8);
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.s2 .modal_hover_txt p{
+    margin-bottom: 30px;
+}
+.s2 .box_wrap .modal:hover .modal_hover_txt{
+    opacity: 1;
+}
+.pop{
+    width:100%;
+    height: 100vh;
+    position:absolute;
+    left:0;
+    top:0;
+    background:rgba(0,0,0, 0.6);
+    z-index:9999999;
+    display:none;
+}
+.pop .img{
+    width: 40%;
+    height: 80vh;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%); 
+    background:white;
+    text-align:center;
+    overflow: scroll;
 
+}
+.pop .img img{
+    display:block;
+    width: 100%;
+
+}
+.pop .btn{
+    margin:20px 0;
+    text-align:center;
+}
+.pop .btn button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 0;
+    border: none;
+}
+.pop .btn .close span{
+    font-size: 0;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.pop .btn .close span:nth-child(1){
+    transform: rotate(45deg) translate(2px, 0);
+}
+.pop .btn .close span:nth-child(2){
+    transform: rotate(-45deg) translate(1px, 0);
+}
+    
 /* #footer .list{display: grid;
     grid-template-columns: 1fr 0.9fr 0.6fr 0.5fr 1fr;
 

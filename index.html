@@ -10,14 +10,14 @@
       <script src="js/html5.js"></script>
    <![endif]-->
 <link href="font/pretendard.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <link href="css/all.css" rel="stylesheet" type="text/css">
 <link href="css/common.css" rel="stylesheet" type="text/css">
-<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="./css/slick.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
 
 
 
@@ -39,15 +39,15 @@
       <div class="link_wrap_bg"></div>
       <div class="link_wrap_bg"></div>
       <div class="link_wrap_inner flex">
-        <a href="#" class="link_wrap_inner_txt">
+        <a href="#none" class="link_wrap_inner_txt" id="link_wepsite">
           <p><span>01</span></p>
           <p>Wepsite</p>
         </a>
-        <a href="#" class="link_wrap_inner_txt">
+        <a href="#none" class="link_wrap_inner_txt" id="link_graphic">
           <p><span>02</span></p>
           <p>Graphic</p>
         </a>
-        <a href="#" class="link_wrap_inner_txt">
+        <a href="#none" class="link_wrap_inner_txt" id="link_contect_me">
           <p><span>03</span></p>
           <p>Contect me</p>
         </a>
@@ -103,7 +103,7 @@
                 <strong>컨셉_</strong><span>#신뢰감 #청결한 #깔끔한 #반응형</span></p>
               <div class="s1_slide_txt_btn_wrap flex">
                 <a href="#" class="btn">가이드 보러가기</a>
-                <a href="#" class="btn">사이트 바로가기</a>
+                <a href="https://benji762.github.io/namyang/index.html" class="btn" target="_blank">사이트 바로가기</a>
                 </div><!--s1_slide_txt_btn_wrap-->
             </div><!--s1_slide_txt_wrap-->
             <p class="s1_slide_img_box">
@@ -134,82 +134,121 @@
     </div><!--inner-->
   </div><!--#wepsite-->
   <div class="section s2" id="graphic">
+      <div id="pop_detailed_page1" class="pop">
+        <div class="img">
+          <img src="images/detailed_page1.jpg">
+          <div class="btn">
+          <button class="close">닫기<span></span><span></span></button>
+        </div>
+        </div>    
+      </div>
     <div class="inner">
       <div class="header flex">
         <h2 class="tit s2_tit">GRAPHIC</h2>
           <ul class="tabs flex">
             <li><a href="#all" class="on">All</a></li>
-            <li><a href="#banner" >Banner</a></li>
-            <li><a href="#detailed"  >Detailed page</a><  li>
+            <li><a href="#banner">Banner</a></li>
+            <li><a href="#detailed">Detailed page</a></li>
           </ul>
       </div><!--header-->
             <div class="panels">
               <div class="panel" id="all">
-                <section class="lazy slider" id="s2_slide">
-                  <div> <!--1 시작-->
-                    <div class="box_wrap all">
-                      <div class="box1">상세페이지</div>
-                      <div class="box2">2번박스</div>
-                      <div class="box3">3번박스</div>
-                      <div class="box4">4번박스</div>
-                      <div class="box5">5번박스</div>
-                    </div><!--box_wrap-->
-                  </div> <!--1 끝-->
-                  <div> <!--2 시작-->
-                    <div class="box_wrap banner">
-                      <div class="box1">상세페이지</div>
-                      <div class="box2">2번2번</div>
-                      <div class="box3">3번박스</div>
-                      <div class="box4">4번박스</div>
-                      <div class="box5">5번박스</div>
-                    </div><!--box_wrap-->
-                  </div> <!--2 끝-->
-                </section><!-- lazy slider -->
+                <div class="swiper-container s2_slider">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide">
+                      <div class="box_wrap all">
+                        <a href="#pop_detailed_page1" class="box1 modal1 modal">
+                          <div class="modal_hover_txt flex_co">
+                            <p>면도기제품의<br>상세페이지입니다.</p>
+                            <span>클릭하시면<br>자세히보실 수 있습니다.</span>
+                          </div>
+                        </a>
+                        <a href="#pop_detailed_page1" class="box2 modal2 modal">
+                          <div class="modal_hover_txt flex_co">
+                            <p>면도기제품의<br>상세페이지입니다.</p>
+                            <span>클릭하시면<br>자세히보실 수 있습니다.</span>
+                          </div>
+                        </a>
+                        <a href="#pop_detailed_page1" class="box3 modal3 modal">
+                          <div class="modal_hover_txt flex_co">
+                            <p>면도기제품의<br>상세페이지입니다.</p>
+                            <span>클릭하시면<br>자세히보실 수 있습니다.</span>
+                          </div>
+                        </a>
+                        <a href="#pop_detailed_page1" class="box4 modal4 modal">
+                          <div class="modal_hover_txt flex_co">
+                            <p>면도기제품의<br>상세페이지입니다.</p>
+                            <span>클릭하시면<br>자세히보실 수 있습니다.</span>
+                          </div>
+                        </a>
+                        <a href="#pop_detailed_page1" class="box5 modal5 modal">
+                          <div class="modal_hover_txt flex_co">
+                            <p>면도기제품의<br>상세페이지입니다.</p>
+                            <span>클릭하시면<br>자세히보실 수 있습니다.</span>
+                          </div>
+                        </a>
+                      </div><!--box_wrap-->
+                    </div><!--1-->
+                    <div class="swiper-slide">
+                      <div class="box_wrap all">
+                        <a href="#" class="box1 modal">상세페이지</a>
+                        <a href="#" class="box2 modal">2번2번</a>
+                        <a href="#" class="box3 modal">3번박스</a>
+                        <a href="#" class="box4 modal">4번박스</a>
+                        <a href="#" class="box5 modal">5번박스</a>
+                      </div><!--box_wrap-->
+                    </div><!--2-->
+                  </div><!--swiper-wrapper-->
+                </div><!--swiper-container-->
               </div><!--panel #all-->
               <div class="panel" id="banner">
-                <section class="lazy slider" id="s2_slide">
-                  <div> <!--1 시작-->
+                <div class="swiper-container s2_slider">
+                  <div class="swiper-wrapper"> 
+                    <div class="swiper-slide">
                     <div class="box_wrap detailed">
-                      <div class="box1">패널2</div>
-                      <div class="box2">2번박스</div>
-                      <div class="box3">3번박스</div>
-                      <div class="box4">4번박스</div>
-                      <div class="box5">5번박스</div>
+                      <a href="#" class="box1 modal">패널2</a>
+                      <a href="#" class="box2 modal">2번박스</a>
+                      <a href="#" class="box3 modal">3번박스</a>
+                      <a href="#" class="box4 modal">4번박스</a>
+                      <a href="#" class="box5 modal">5번박스</a>
                     </div><!--box_wrap-->
-                  </div> <!--1 끝-->
-                </section><!-- lazy slider -->
+                  </div><!--swiper-slide-->
+                </div>
+              </div><!--swiper-container-->
               </div><!--panel #banner-->
               <div class="panel" id="detailed">
                 <section class="lazy slider" id="s2_slide">
                   <div> <!--1 시작-->
                     <div class="box_wrap">
-                      <div class="box1">패널2</div>
-                      <div class="box2">2번박스</div>
-                      <div class="box3">3번박스</div>
-                      <div class="box4">4번박스</div>
-                      <div class="box5">5번박스</div>
+                      <div class="box1 modal">패널2</div>
+                      <div class="box2 modal">2번박스</div>
+                      <div class="box3 modal">3번박스</div>
+                      <div class="box4 modal">4번박스</div>
+                      <div class="box5 modal">5번박스</div>
                     </div><!--box_wrap-->
                   </div> <!--1 끝-->
                 </section><!-- lazy slider -->
               </div><!--panel #detailed-->
             </div><!--panels-->
-          
       </div><!--inner -->
   </div><!--#graphic-->
-  <div class="section">asdasdasd4</div>
+  
+  <div class="section" id="contect_me">asdasdasd4</div>
   <footer id="footer"></footer>
 </div>
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery-migrate-3.0.0.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+<script src="js/swiper_active.js"></script>
 <script src="js/fullpage.js"></script>
 <script src="js/hover_click.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/slick_active.js"></script>
 <script src="js/text_type.js"></script>
 <script src="js/tabs.js" ></script>
-</body>
 
+</body>
 </html>
 

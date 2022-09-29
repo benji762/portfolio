@@ -5,8 +5,8 @@ var words = ['해결하는디자이너', '김지운입니다.'],
     len = words.length,
     forwards = true,
     skip_count = 0,
-    skip_delay = 12,
-    speed = 100;
+    skip_delay = 8,
+    speed = 90;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
