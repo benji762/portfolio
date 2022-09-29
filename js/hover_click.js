@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	  $(document).mouseup(function (e){
 		if($(".pop").has(e.target).length === 0){
-		  $(".pop").stop().fadeOut(300)();
+		  $(".pop").stop().fadeOut(300);
 		}
 	  })
 

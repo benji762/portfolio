@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$(function(){
+		$('.s2 .panel').hide();
 		// 1. 각각의 tabSet 별로 따로 처리되게한다
 		// 4. 기본상태 일 때 선택되어 있는 anchor의 panel이 보이게 한다.
 			var anchor_on = $('.tabs a.on'); // on 클래스를 가진 anchor를 anchor_on으로 선언

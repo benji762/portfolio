@@ -549,9 +549,6 @@
 .s2 .tabs a.on{
     color: #222;
 }
-.s2 .panel{
-    display: none;
-}
 .s2 .box_wrap{
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 2fr;
@@ -655,3 +652,4 @@
     grid-template-rows: 1fr 70px 1fr;
 } */
 /*********************footer****************************/
+
