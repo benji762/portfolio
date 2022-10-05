@@ -1,0 +1,242 @@
+.slick-dots{
+    position: absolute;
+    top:-30px;
+    left:0px;
+    display: flex;
+}
+
+#slick-slide-control00,#slick-slide-control01{
+    font-size: 0;
+    position: relative;
+    border: none;
+    color: #999;
+}
+.slick-active #slick-slide-control00,.slick-active #slick-slide-control01{
+    color: #000;
+}
+#slick-slide-control00{
+    margin-right: 50px;
+}
+#slick-slide-control00::after{
+    content: 'Main';
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#slick-slide-control01::after{
+    content: 'Sub';
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flex_co{
+    display: flex;
+    flex-direction: column;
+}
+.txt_bold{
+    font-weight: 700;
+}
+.txt_regular{
+    font-weight: 400;
+}
+.txt_red{
+    color: #EE4242;
+}
+.txt_crimson{
+    color:#F55B5B;
+}
+.txt_navy{
+    color: #0C2340
+}
+.txt_tit{
+    font-weight: 700;
+    font-size: 1.7778rem;
+    line-height: 1.15em;
+}
+.txt_sub_tit{
+    font-size: 1.3334rem;
+    line-height: 1.15em;
+    font-weight: 700;
+}
+.txt_cont{
+    color: #666;
+    line-height: 1.5em;
+}
+
+#section1{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/main1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+#section1::before{
+    content: '';
+    background-color: rgba(51,51,51,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#section1 .tit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#section1 .tit h2{
+    font-size: 6.6667rem;
+    line-height: 1em;
+    color: #fff;
+}
+#section1 .tit p{
+    font-size: 3.3334rem;
+    line-height: 1em;
+    color: #fff;
+}
+#section1 .info{
+    position: absolute;
+    bottom: 100px;
+    right: 160px;
+    color: #fff;
+    width: 309px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    font-size: 1.3334rem;
+}
+
+#section2{
+    width: 100%;
+}
+#section2 .s2_left, #section2 .s2_right{
+    width: 50%;
+    padding: 100px 50px;
+    box-sizing: border-box;
+}
+#section2 .page_wrap h2{
+    margin-bottom: 20px;
+}
+#section2 .page_wrap h2 a{
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #212529;
+    text-decoration: underline;
+}
+#section2 .page_wrap p{
+    margin-bottom: 50px;
+}
+#section2 .page_img img{
+    width: 100%;
+}
+#section2 .s2_right{
+    background-color: #FFF8F8;
+}
+#section2 .s2_right .art{
+    margin-bottom: 100px;
+}
+#section2 .s2_right .art > h2{
+    margin-bottom: 20px;
+}
+#section2 .s2_right .art > p{
+    margin-bottom: 50px;
+}
+#section2 .art2_cont_box{
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#section2 .art2_cont_tit,#section2 .art3_cont_tit{
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+#section2 .art2_cont{
+    align-items: center;
+    width: 200px;
+}
+#section2 .art2_cont h4{
+    margin-bottom: 20px;
+}
+#section2 .art2_cont p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 50%;
+}
+
+#section2 .cont_box1{
+    margin-bottom: 50px;
+}
+
+#section2 .cont_box2 .art2_cont p{
+    color: #fff;
+    background-color: #F55B5B;
+    font-weight: 700;
+}
+
+#section2 .colors_box{
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+#section2 .colors_box_tit{
+    font-size: 1.7778rem;
+    line-height: 1.15em;
+    font-weight: 700;
+}
+#section2 .colors_box_txt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+#section2 .colors_box_txt > span{
+    text-align: end;
+}
+#section2 .indigo{
+    background-color: #0C2340;
+}
+#section2 .crimson{
+    background-color: #EE4242;
+}
+#section2 .colors_art{
+    align-items: center;
+    width: 250px;
+}
+#section2 .colors_art > p{
+    color: #666;
+    font-weight: 400;
+}
+#section2 .colors_art_wrap{
+    padding: 0 50px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+#section2 .font_wrap{
+    padding: 0 50px;
+}
+#section2 .font_wrap_tit{
+    margin-right: 40px;
+}
+#section2 .pre_regular p, #section2 .pre_bold p{
+    margin-bottom: 5px;
+}
+#section2 .pre_bold{
+    margin-bottom: 50px;
+}
