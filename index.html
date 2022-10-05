@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 
-<title>Untitled Document</title>
+<title>포트폴리오_김지운</title>
   <!--[if lt IE 9]>
       <script src="js/html5.js"></script>
    <![endif]-->
@@ -24,7 +24,8 @@
 </head>
 
 <body>
-<div id="fullpage" class="wrap">
+<div class="wrap">
+<div id="fullpage">
   <div id="intro">
     <div class="intro_bg_top"></div>
     <div class="intro_bg_bottom"></div>
@@ -32,16 +33,18 @@
       <div class="word"></div>
     </div><!--intro_txt txt_fir-->
   </div><!--#intro-->
+
   <div class="section" id="home">
+    <div class="inner_line"></div>
     <p class="top_txt flex"><span>Portfolio</span></p>
     <h2 class="home_title">KIMJIUN</h2>
     <div class="link_wrap">
       <div class="link_wrap_bg"></div>
       <div class="link_wrap_bg"></div>
       <div class="link_wrap_inner flex">
-        <a href="#none" class="link_wrap_inner_txt" id="link_wepsite">
+        <a href="#none" class="link_wrap_inner_txt" id="link_website">
           <p><span>01</span></p>
-          <p>Wepsite</p>
+          <p>Website</p>
         </a>
         <a href="#none" class="link_wrap_inner_txt" id="link_graphic">
           <p><span>02</span></p>
@@ -54,20 +57,35 @@
       </div> <!--link_wrap_inner-->
     </div><!--link_wrap-->
     <div class="home_cont_wrap flex">
-      <div class="skill_wrap flex">
-        <span class="skill_btn">html5&css3</span>
-        <span class="skill_btn">jQuery</span>
-        <span class="skill_btn">Figma</span>
-        <span class="skill_btn">Photoshop</span>
-        <span class="skill_btn">Illustrator</span>
-      </div><!--skill_wrap-->
-      <div class="profile flex_co">
-        <div class="img_box"><p class="profile_img"></p></div>
-        <a href="#">Download Resume
-          <p class="arrow_right"><span></span></p>
-        </a>
-        
-      </div><!--profile-->
+      <div class="profile_wrap flex">
+        <div class="profile flex_co">
+          <div class="img_box"><p class="profile_img"></p></div>
+          <a href="#">Download Resume
+            <p class="arrow_right"><span></span></p>
+          </a>
+        </div><!--profile-->
+        <div class="profile_cont_wrap flex_co">
+          <article class="introduce_me">
+            <p>Profile</p>
+            <h2 class="introduce_me_tit">해결하는 디자이너<br><span> 김지운입니다!</span></h2>
+            <p class="introduce_me_txt">사용성 좋은 웹디자인을 위해 끊임없이 <br>
+              고민하고 소통하여 최선의 결과를 만들어내도록 노력합니다.<br>
+              
+
+            </p>
+          </article>
+          <p>Skill</p>
+          <article class="skill_wrap flex">
+            <span class="skill_btn">html5&css3</span>
+            <span class="skill_btn">jQuery</span>
+            <span class="skill_btn">Figma</span>
+            <span class="skill_btn">Photoshop</span>
+            <span class="skill_btn">Illustrator</span>
+          </article><!--skill_wrap-->
+        </div>
+      </div><!--profile_wrap-->
+     
+
       <div class="txt_ani flex">
         <svg x="0"y="0" class="txt_ani_cir">
           <defs>
@@ -82,11 +100,13 @@
       </div><!--txt_ani-->
     </div><!--home_cont_wrap-->
   </div><!--#home-->
-  <div class="section s1" id="wepsite">
+  <div class="section s1" id="website">
+    <div class="inner_line"></div>
     <div class="inner">
       <div class="header">
-        <h2 class="tit s1_tit">WEPSITE</h2>
-      </div><!--wepsite_header -->
+        
+        <h2 class="tit s1_tit">WEBSITE</h2>
+      </div><!--website_header -->
       <section class="lazy slider" >
         <div> <!--1 시작-->
           <div class="s1_slide_cont_wrap flex">
@@ -132,7 +152,7 @@
         </div> <!--1 끝-->
       </section><!-- lazy slider -->
     </div><!--inner-->
-  </div><!--#wepsite-->
+  </div><!--#website-->
   <div class="section s2" id="graphic">
     <article class="popup_wrap">
       <div id="pop_detailed_page1" class="pop detailed_page">
@@ -245,7 +265,7 @@
         <h2 class="tit s2_tit">GRAPHIC</h2>
       </div><!--header-->
       <div class="swiper-container s2_slider">
-                  <div class="swiper-wrapper"> 
+        <div class="swiper-wrapper"> 
                     <div class="swiper-slide">
                       <div class="box_wrap all">
                         <a href="#pop_detailed_page1" class="box1 detailed_page1 modal">
@@ -346,17 +366,19 @@
                         </a>
                       </div><!--box_wrap-->
                     </div><!--2-->
-                  </div><!--swiper-wrapper-->
+        </div><!--swiper-wrapper-->
       </div><!--swiper-container-->
     </div><!--inner -->
   </div><!--#graphic-->
-  <div class="section" id="contect_me">asdasdasd4</div>
-  <footer id="footer"></footer>
+  <div class="section" id="contect_me">
+    <div class="contect_me_bg_top"></div><!--contect_me_bg_top-->
+    <div class="contect_me_bg_bottom"></div><!--contect_me_bg_bottom-->
+  </div>
+</div>
 </div>
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery-migrate-3.0.0.js"></script>
-
 <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
 <script src="js/fullpage.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>

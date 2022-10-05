@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 	
 
-	$("#link_wepsite").click(function(){
+	$("#link_website").click(function(){
 		var index  = $(this).parent().index();
 		$.fn.fullpage.moveTo(index);
 	})
