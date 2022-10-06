@@ -592,6 +592,10 @@
 
 
 /* s2 */
+.mo_graphic_box{
+    display: none;
+}
+
 .s2{
     position: relative;
 }
@@ -647,6 +651,7 @@
 .s2 .box_wrap.all2 .modal img{
     object-fit: fill;
 }
+
 /* .s2 .all2 .box1{
     width: 313px;
 }
@@ -884,6 +889,9 @@
 @media all and (max-width:768px){
     .pc_graphic_box{
         display: none;
+    }
+    .mo_graphic_box{
+        display: block;
     }
     .s2 .box_wrap{
         height: 100vh;
