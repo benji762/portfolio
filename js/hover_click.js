@@ -35,5 +35,18 @@ $(document).ready(function() {
 		}
 	  })
 
+
+	  $(document).ready(function(){
+		var box_h = $('.s1_slide_img_box').height();
+		var h = $('.s1_slide_img_box img').height();		
+		$('.s1_slide_img_box').each(function(){
+			$(this).hover(function(){
+				$(this).find('img').stop().animate({'top': (h*(-1))+(box_h)+'px'},5000)
+			},function(){
+				$(this).find('img').stop().animate({'top': 0}, 5000)
+			})
+		})
+	  })
+	  
 	  
 
