@@ -5,6 +5,7 @@ $(document).ready(function() {
 		scrollHorizontally: true,
 		navigation: true,
 		normalScrollElements:'.pop,#intro',
+		responsiveWidth: 1024,
 	});
 
 	//methods
