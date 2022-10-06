@@ -901,7 +901,7 @@
         height: 40%;
         width: 45%;
     }
-    .s2 .long_banner{
+    .s2 .box_wrap .long_banner{
         width: 45%;
     }
     .s2 .all{
@@ -924,16 +924,25 @@
         align-items: flex-start;
         align-content: flex-start;
     }
-    .s2 .pop_1 {
+    .s2 .box_wrap .pop_1 {
         width: 45%;
     }
-    .s2 .pop_2 {
+    .s2 .box_wrap .pop_2 {
         width:45%;
     }
-    .se .banner1{
+    .se .box_wrap .banner1{
         width: 45%;
     }
-    .s2 .banner3{
+    .s2 .box_wrap .banner3{
         width:45%;
+    }
+    .pop .img{
+        width: 80%;
+    }
+    .pop.banner2 .img{
+        width: 80%;
+    }
+    .pop.detailed_page .img{
+        width: 80%;
     }
 }
