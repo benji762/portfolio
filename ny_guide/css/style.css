@@ -70,56 +70,98 @@
     line-height: 1.5em;
 }
 
+#wrap{
+    overflow: hidden;
+}
+.inner{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
 #section1{
     width: 100%;
     height: 100vh;
-    background: url(../images/main1.jpg) no-repeat center;
-    background-size: cover;
+    /* background: url(../images/main1.jpg) no-repeat center;
+    background-size: cover; */
     position: relative;
+    background-color: #546272;
+    
 }
-#section1::before{
-    content: '';
-    background-color: rgba(51,51,51,0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
+#section1 .s1_left{
+    width: 30%;
+    height: 100vh;
+    justify-content: center;
 }
 #section1 .tit{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-bottom: 50px;
 }
-#section1 .tit h2{
-    font-size: 6.6667rem;
+#section1 .s1_left .tit h2{
+    font-size: 3rem;
     line-height: 1em;
     color: #fff;
 }
 #section1 .tit p{
-    font-size: 3.3334rem;
+    font-size: 1.5rem;
     line-height: 1em;
     color: #fff;
 }
 #section1 .info{
-    position: absolute;
-    bottom: 100px;
-    right: 160px;
     color: #fff;
     width: 309px;
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    font-size: 1.3334rem;
+    font-size: 1rem;
 }
-
-#section2{
+#section1 .s1_right{
+    width: 70%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#section1 .pc_view{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#section1 .pc_view_mockup{
+    background: url(../images/mockup_desktop2.png) no-repeat center;
+    width: 100%;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+}
+#section1 .pc_view_mockup::before{
+    content: '';
+    display: block;
+    padding-bottom: 66%;
+}
+.mock_img{
+    position: absolute;
+    top: 2.4%;left: 1.5%;
+    width: 97%;
+    height: 100%;
+    /* border-radius: 30px; */
+    overflow: hidden;
+}
+.mock_img video{
     width: 100%;
 }
-#section2 .s2_left, #section2 .s2_right{
-    width: 50%;
-    padding: 100px 50px;
+#section2{
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #FFF8F8;
+}
+#section2 .s2_left,#section2 .s2_right{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     box-sizing: border-box;
+    padding: 100px 50px;
+}
+#section2 .s2_left{
+    order: 2;
 }
 #section2 .page_wrap h2{
     margin-bottom: 20px;

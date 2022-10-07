@@ -11,7 +11,11 @@ $(document).ready(function() {
 			$('.link_wrap').removeClass('black');
 		})
 	})
-
+$(function(){
+	$('.main_pop_up .close').click(function(){
+		$('.main_pop_up').hide()
+	})
+})
 
 	// #pop_up
 	//팝업창 열기
