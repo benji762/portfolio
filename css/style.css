@@ -1,3 +1,8 @@
+b{
+    font-weight: 500;
+    display: block;
+}
+
 .wrap{
     position: relative;
     background:url(../images/bg.jpg) no-repeat;
@@ -1069,6 +1074,12 @@
 }
 
 @media all and (max-width:768px){
+    .section{
+        padding-top: 30px;
+    }
+    .inner{
+        padding: 0 10px;
+    }
     .pc_graphic_box{
         display: none;
     }
@@ -1089,6 +1100,7 @@
     .info_me{
         width: 100%;
         padding: 10px;
+        margin-bottom: 30px;
     }
     .skill_btn{
         margin-right: 8px;
@@ -1098,15 +1110,40 @@
         padding-bottom: 30px;
         border-bottom: 1px solid rgba(0,0,0,0.5);
     }
-    
-
-
-
-
-
-
-
-
+    .section .header::after{
+        left: -10px;
+    }
+    .section .header .tit{
+        font-size: 2.5rem;
+    }
+    .section .tit::after{
+        font-size: 2.5rem;
+    }
+    .s1 .s1_slide_cont_wrap{
+        flex-wrap: wrap;
+    }
+    .s1 .s1_slide_txt_wrap{
+        width: 100%;
+    }
+    .s1 .s1_slide_img_box{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .s1 .s1_slide_txt_tit{
+        font-size: 2rem;
+    }
+    .s1 .s1_slide_txt{
+        flex-wrap: wrap;
+    }
+    .s1 .s1_slide_txt:nth-child(2) strong,.s1 .s1_slide_txt:nth-child(3) strong{
+        margin-bottom: 5px;
+    }
+    .s1_slide_txt_btn_wrap{
+        margin-bottom: 30px;
+    }
+    .s1 .s1_slide_txt_tit_box{
+        margin-bottom: 30px;
+    }
 
 
     .s2 .box_wrap{
