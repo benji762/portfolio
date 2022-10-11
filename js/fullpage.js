@@ -4,8 +4,9 @@ $(document).ready(function() {
 		autoScrolling:true,
 		scrollHorizontally: true,
 		navigation: true,
-		normalScrollElements:'.pop,#intro',
+		normalScrollElements:'.pop,#intro,.main_pop_up_bg,.main_pop_up',
 		responsiveWidth: 1180,
+		responsiveHeight: 767,
 	});
 
 	//methods
