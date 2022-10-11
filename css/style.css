@@ -99,7 +99,7 @@ b{
     z-index: 0;
 }
 
-.fp-viewing-3 #fp-nav, .fp-viewing-6 #fp-nav{
+.fp-viewing-3 #fp-nav{
     display: none;
 }
 @keyframes nav_hide{
@@ -168,7 +168,7 @@ b{
     content:'GRAPHIC';
 }
 #fp-nav ul li:nth-child(4) a span::before{
-    content:'CONTECT ME';
+    content:'CLONE CODING';
 
 }
 
@@ -182,7 +182,7 @@ b{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: none;
+    /* display: none; */
     z-index: 9999999;
     animation: intro_none 1s 3.8s forwards;
 }
