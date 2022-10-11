@@ -182,7 +182,7 @@ b{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    display: none;
+    /* display: none; */
     z-index: 9999999;
     animation: intro_none 1s 3.8s forwards;
 }
@@ -1074,6 +1074,9 @@ b{
 }
 
 @media all and (max-width:768px){
+    .intro_txt .word{
+        font-size: 2.5rem;
+    }
     .section{
         padding-top: 30px;
     }
