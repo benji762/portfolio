@@ -13,7 +13,7 @@ $(document).ready(function() {
 	})
 $(function(){
 	$('.main_pop_up .close').click(function(){
-		$('.main_pop_up').hide()
+		$('.main_pop_up').addClass('off')
 		$('.main_pop_up_bg').addClass('off')
 	})
 })

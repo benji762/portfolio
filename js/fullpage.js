@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 	
 
-	$("#link_website").click(function(){
+	$("#link_project").click(function(){
 		var index  = $(this).parent().index();
 		$.fn.fullpage.moveTo(index);
 	})
@@ -23,7 +23,7 @@ $(document).ready(function() {
 		var index  = $(this).parent().index();
 		$.fn.fullpage.moveTo(index + 1);
 	})
-	$("#link_contect_me").click(function(){
+	$("#link_clone_coding").click(function(){
 		var index  = $(this).parent().index();
 		$.fn.fullpage.moveTo(index + 2);
 	})
