@@ -551,17 +551,13 @@ b{
     border: 1px solid rgba(0,0,0,0.5);
     overflow: hidden;
 }
-/* .s1 .s1_slide_img_box:hover img{
-    transform: translateY(-100%);
 
-} */
 .s1 .s1_slide_img_box img{
     position: relative;
     width: 100%;
     top: 0;
     transform: translateY(0);
     z-index: -1;
-    /* transition: 6s ease-in-out; */
 }
 .s1 .s1_slide_txt_tit_box{
     margin-bottom: 50px;

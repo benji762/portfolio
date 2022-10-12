@@ -1,3 +1,15 @@
+$(document).ready(function(){
+	var box_h = $('.s1_slide_img_box').height();
+	var h = $('.s1_slide_img_box img').height();
+	$('.s1_slide_img_box').each(function(){
+		$(this).hover(function(){
+			$(this).find('img').stop().animate({'top': (h*(-1))+(box_h)+'px'},5000)
+		},function(){
+			$(this).find('img').stop().animate({'top': 0}, 5000)
+		})
+	})
+  })
+
 $(document).ready(function() {
 	$('.link_wrap_inner_txt').each(function(){
 		$(this).hover(function(){
@@ -11,12 +23,6 @@ $(document).ready(function() {
 			$('.link_wrap').removeClass('black');
 		})
 	})
-$(function(){
-	$('.main_pop_up .close').click(function(){
-		$('.main_pop_up').addClass('off')
-		$('.main_pop_up_bg').addClass('off')
-	})
-})
 
 	// #pop_up
 	//팝업창 열기
@@ -40,18 +46,8 @@ $(function(){
 		}
 	  })
 
-
-	  $(document).ready(function(){
-		var box_h = $('.s1_slide_img_box').height();
-		var h = $('.s1_slide_img_box img').height();		
-		$('.s1_slide_img_box').each(function(){
-			$(this).hover(function(){
-				$(this).find('img').stop().animate({'top': (h*(-1))+(box_h)+'px'},5000)
-			},function(){
-				$(this).find('img').stop().animate({'top': 0}, 5000)
-			})
-		})
-	  })
+	  
+	  
 	  
 	  
 
