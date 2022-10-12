@@ -3,5 +3,6 @@ $(document).ready(function() {
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
 		arrows : true,
+        dots : true
       });
 });

@@ -7,6 +7,7 @@ new Swiper('.s2_slider', {
 	spaceBetween : 30,
 	slidesPerGroup : 1,
 	freeMode: true,
+	
 });
 
 })
