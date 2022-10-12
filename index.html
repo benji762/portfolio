@@ -17,29 +17,10 @@
 <link rel="stylesheet" type="text/css" href="./css/slick.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
-
-
-
-
 </head>
-
 <body>
 <div class="wrap">
 <div id="fullpage">
-  <div id="intro">
-    <div class="intro_bg_top"></div>
-    <div class="intro_bg_bottom"></div>
-    <div class="intro_txt txt_fir flex">
-      <div class="word"></div>
-    </div><!--intro_txt txt_fir-->
-  </div><!--#intro-->
-  <p class="main_pop_up_bg"></p><!--main_pop_up_bg-->
-  <div class="main_pop_up flex_co">
-      <h2>저의 포트폴리오 사이트에 방문해주셔서 감사합니다</h2>
-      <p>본 사이트는 1920px에 최적화되어 있습니다.</p>
-      <p>포트폴리오는 계속 업데이트중입니다.</p>
-      <button class="close">닫기</button>
-  </div>
   <div class="section" id="home">
     <div class="inner_line"></div>
     <p class="top_txt flex"><span>Portfolio</span></p>
@@ -134,7 +115,7 @@
           </article><!--skill_wrap-->
         </div>  
       </div>
-      <div class="txt_ani flex">
+      <!-- <div class="txt_ani flex">
         <svg x="0"y="0" class="txt_ani_cir">
           <defs>
             <path id="text-line" d="M 50 150 A 50 50 0 1 1 250 150 A 50 50 0 1 1 50 150  ">
@@ -145,7 +126,8 @@
             </textPath>
           </text>
         </svg>
-      </div><!--txt_ani-->
+      </div> -->
+      <!--txt_ani-->
     </div><!--home_cont_wrap-->
   </div><!--#home-->
   <div class="section s1" id="project">
@@ -220,29 +202,36 @@
     <p class="top_txt flex"><span>Portfolio</span></p>
     <article class="popup_wrap">
       <div id="pop_detailed_page1" class="pop detailed_page">
+        <div class="btn">
+          <button class="close">닫기<span></span><span></span></button>
+        </div>
         <div class="img">
           <img src="images/detailed_page1.jpg" alt="면도기 상세페이지 팝업">
-            <div class="btn">
-            <button class="close">닫기<span></span><span></span></button>
-          </div>
+          
         </div>    
       </div><!--#pop_detailed_page1-->
+
       <div id="pop_detailed_page1_2" class="pop detailed_page">
+        <div class="btn">
+          <button class="close">닫기<span></span><span></span></button>
+        </div>
         <div class="img">
+          
           <img src="images/detailed_page1_2.jpg" alt="면도기 제품 상세페이지 팝업">
-            <div class="btn">
-            <button class="close">닫기<span></span><span></span></button>
-          </div>
+            
         </div>    
       </div><!--#pop_detailed_page1_2-->
+
       <div id="pop_detailed_page2" class="pop detailed_page">
+        <div class="btn">
+          <button class="close">닫기<span></span><span></span></button>
+        </div>
         <div class="img">
           <img src="images/detailed_page2.jpg" alt="선크림 상세페이지 팝업">
-            <div class="btn">
-            <button class="close">닫기<span></span><span></span></button>
-          </div>
+            
         </div>    
       </div><!--#pop_detailed_page2-->
+
       <div id="pop_wide_banner1" class="pop">
         <div class="img">
           <img src="images/wide_banner1.jpg" alt="남양유업 배너 팝업">
@@ -251,6 +240,7 @@
           </div>
         </div>    
       </div><!--#pop_wide_banner1-->
+      
       <div id="pop_wide_banner2" class="pop ">
         <div class="img">
           <img src="images/wide_banner2.jpg" alt="남양유업 배너 팝업">
@@ -330,8 +320,9 @@
         
       </div><!--header-->
       <div class="swiper-container s2_slider pc_graphic_box">
-        <p class="s2_slide_cmt">좌우로 슬라이드 해주세요</p>
+        <p class="s2_slide_cmt">자세히 보시려면 이미지를 클릭하세요:)</p>
         <div class="swiper-wrapper"> 
+          
                     <div class="swiper-slide">
                       <div class="box_wrap all">
                         <a href="#pop_detailed_page1" class="box1 detailed_page1 modal">
@@ -433,6 +424,8 @@
                       </div><!--box_wrap-->
                     </div><!--2-->
         </div><!--swiper-wrapper-->
+        <div class="swiper-button-next"></div>
+	      <div class="swiper-button-prev"></div>
       </div><!--swiper-container-->
 
 
@@ -440,7 +433,7 @@
 
 
       <div class="swiper-container s2_slider mo_graphic_box">
-        <p class="s2_slide_cmt">좌우로 슬라이드 해주세요</p>
+        <p class="s2_slide_cmt">자세히 보시려면 이미지를 클릭하세요:)</p>
         <div class="swiper-wrapper"> 
                     <div class="swiper-slide">
                       <div class="box_wrap all">
