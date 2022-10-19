@@ -46,6 +46,7 @@
         </article>
       </div><!--s1_right-->
     </div><!--inner-->
+    <a data-target="#section2" href="#a" class="comment">Show Guide</a>
   </section>
   <section id="section2" class="flex">
     <div class="s2_left">
@@ -202,7 +203,15 @@
 <script src="js/jquery-migrate-3.0.0.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/slick_active.js"></script>
+<script>
+  $(".comment").click(function(){
+   var scrollPosition = $($(this).attr("data-target")).offset().top;
 
+   $("html").animate({
+         scrollTop: scrollPosition
+   }, 500);
+ });
+</script>
 </body>
 </html>
 
