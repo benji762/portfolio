@@ -5,7 +5,7 @@ b{
 
 .wrap{
     position: relative;
-    background:url(../images/bg.jpg) no-repeat;
+    background:url(../images/bg2.jpg) no-repeat;
     background-size: cover;
 
     /* background-color: rgba(0,0,0,0.05); */
@@ -546,11 +546,15 @@ b{
 .s1 .s1_video_box{
     width: 60%;
     align-items: center;
+    justify-content: center;
 }
 .s1 .s1_video_box video{
     width: 100%;
     border: 1px solid rgb(0,0,0);
     box-sizing: border-box;
+}
+.s1 .s1_video_box .tabling{
+    width: 300px;
 }
 .s1 .s1_slide_img_box{
     width: 60%;

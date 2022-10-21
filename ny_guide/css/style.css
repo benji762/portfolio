@@ -163,6 +163,7 @@
     background-size: contain;
     position: relative;
     z-index: 1;
+    pointer-events:none;
 }
 #section1 .pc_view_mockup::before{
     content: '';
@@ -171,7 +172,7 @@
 }
 .mock_img{
     position: absolute;
-    top: 2.4%;left: 1.5%;
+    top: 11.4%;left: 1.5%;
     width: 97%;
     height: 100%;
     /* border-radius: 30px; */
