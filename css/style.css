@@ -289,8 +289,8 @@ b{
 }
 .info_me_graph img{
     width: 260px;
-    text-align: center;
-    /* height: 70%; */
+    /* height: 200px; */
+    
 }
 .info_me_skill{
     justify-content: center;
@@ -898,6 +898,7 @@ border-radius: 50%;
     } */
     .info_me_graph img{
         width: 230px;
+        height: 178px;
     }
     .top_txt{
         padding: 8px 50px;
