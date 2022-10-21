@@ -213,7 +213,6 @@ b{
     position: relative;
     /* background-color: #fff; */
     background: url(../images/bg.jpg) no-repeat;
-    background-size: fill;
     z-index: 1;
 }
 
@@ -851,6 +850,9 @@ border-radius: 50%;
 }
 .pop .btn .close span:nth-child(2){
     transform: rotate(-45deg);
+}
+#clone_coding .slick-prev{
+    right: 115px;
 }
 
 
